@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Test</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .line {
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .line:last-child {
+      border-bottom: 4px solid black;
+    }
+
+
+    .line:first-child {
+      border-top: 4px solid black;
+    }
+
+    .element {
+      flex-shrink: 1;
+      border-right: 2px solid black;
+      border-left: 2px solid black;
+    }
+
+    .element:last-child {
+      border-right: 4px solid black;
+    }
+
+    .element:first-child {
+      border-left: 4px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
